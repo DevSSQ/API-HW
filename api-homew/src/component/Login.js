@@ -26,7 +26,8 @@ function Login() {
         email,
         pass
     }).then(res => {
-        console.log(res)
+      localStorage.setItem(email, "email")
+      alert(localStorage.getItem("email"))
     })
     }
 
@@ -35,8 +36,8 @@ function Login() {
         navigate("/HomePage")
       }
 
-    //   localStorage.setItem("email", {setEmail})
-    //   alert(localStorage.getItem(email))
+      // localStorage.setItem(email, "email")
+      // alert(localStorage.getItem("email"))
 
     // useEffect(() => {
     //     localStorage.setItem("email", JSON.stringify(email));

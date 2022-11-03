@@ -6,7 +6,7 @@ function HomePage() {
     const [state, setstate] = useState([])
     useEffect (() => {
       axios.get("https://makeup-api.herokuapp.com/api/v1/products.json").then((res)=>{
-        console.log(res.data)
+        // console.log(res.data)
         setstate(res.data)
       })
     }, [])
